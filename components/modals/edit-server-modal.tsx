@@ -1,6 +1,6 @@
 "use client";
 
-import * as z from "zod";
+import * as zod from "zod";
 
 import {
   Dialog,
@@ -29,11 +29,11 @@ import { useModal } from "@/hooks/use-modal-store";
 import { useRouter } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-const formSchema = z.object({
-  name: z.string().min(1, {
+const formSchema = zod.object({
+  name: zod.string().min(1, {
     message: "Server name is required.",
   }),
-  imageUrl: z.string().min(1, {
+  imageUrl: zod.string().min(1, {
     message: "Server image is required.",
   }),
 });
@@ -62,7 +62,7 @@ export const EditServerModal = () => {
 
   const isLoading = form.formState.isSubmitting;
 
-  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+  const onSubmit = async (values: zod.infer<typeof formSchema>) => {
     try {
       await axios.patch(`/api/servers/${server?.id}`, values);
 

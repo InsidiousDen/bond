@@ -74,6 +74,7 @@ export async function PATCH(
     if (!serverId) {
       return new NextResponse("Server ID missing", { status: 400 });
     }
+
     if (!params.memberId) {
       return new NextResponse("Member ID missing", { status: 400 });
     }
