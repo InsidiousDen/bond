@@ -78,7 +78,6 @@ export const CreateChannelModal = () => {
         },
       });
       await axios.post(url, values);
-
       form.reset();
       router.refresh();
       onClose();
