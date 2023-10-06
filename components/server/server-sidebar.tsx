@@ -164,7 +164,7 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
           {!!videoChannels?.length && (
             <div className="mb-2">
               <ServerSection
-                label="Voice Channels"
+                label="Video Channels"
                 role={role}
                 sectionType="channels"
                 channelType={ChannelType.VIDEO}
