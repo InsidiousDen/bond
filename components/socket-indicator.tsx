@@ -13,7 +13,7 @@ export const SocketIndicator = () => {
         className="bg-yellow-600 text-white border-none"
         color={isConnected ? "green" : "red"}
       >
-        Fallback: Polling every 1 second
+        Fallback: Polling every 1 s
       </Badge>
     );
   }
