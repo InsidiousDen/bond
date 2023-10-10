@@ -47,7 +47,7 @@ export const DeleteServerModal = () => {
             Delete Server
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
-            Are you sure you want to do this
+            Are you sure you want to do this?
             <br />
             <span className="font-semibold text-indigo-500">
               {server?.name}
