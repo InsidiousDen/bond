@@ -22,6 +22,7 @@ export const FileUpload = ({ value, endpoint, onChange }: FileUploadProps) => {
           src={value}
           alt="Server image"
           className="rounded-full object-cover"
+          sizes="80px"
         />
         <button
           className="bg-rose-500 text-white rounded-full absolute top-0 right-0 shadow-sm"

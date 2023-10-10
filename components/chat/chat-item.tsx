@@ -162,6 +162,7 @@ export const ChatItem = ({
                 alt={content}
                 fill
                 className="object-cover"
+                sizes="190px"
               />
             </a>
           )}
