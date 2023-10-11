@@ -1,6 +1,6 @@
 import { db } from "@/lib/db";
 
-export const getOrCrateConversation = async (
+export const getOrCreateConversation = async (
   memberOneId: string,
   memberTwoId: string
 ) => {
